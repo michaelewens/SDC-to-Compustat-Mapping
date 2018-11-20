@@ -14,7 +14,15 @@ where
 * `agvkey`: the acquirer gvkey (can be missing)
 * `tgvkey`: the target gvkey (can be missing)
 
-Note that this includes all deals where we could find a gvkey for either the acquirer or target.
+Note that this includes all deals where we could find a gvkey for either the acquirer or target.  Basic statistics as of Nov. 20th, 2018:
+
+* 100,454 deals with `agvkey`
+* 50,248 deals with `tgveky`
+* 22,259 with both `agvkey` and `tgveky`
+
+# Updates
+
+Stay tuned (i.e., watch or star this repo.) for updates.  Any errors or fill-ins, please email michael.ewens@gmail.com.
 
 # Citations
 
