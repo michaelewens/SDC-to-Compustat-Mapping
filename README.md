@@ -1,31 +1,42 @@
 # Description
 
-Connecting SDC's M&A database to Compustat requires `gvkey`'s for both the acquirer and target (if they are traded/public).  [Gordon Phillips](http://faculty.tuck.dartmouth.edu/gordon-phillips/) did a lot of the legwork to get this project started.  The final product has over X% coverage of targets and acquirers that appear to be public.   
-
-# How it was done
-
-I ([Michael Ewens](https://ewens.caltech.edu/) created [this website](http://makeresearchgreatagain.com/data_search/) to replicate the `gvkey` search in WRDS.  Either myself or a research assistant searched for nearly all M&As deals using this tool.  
+Connecting SDC's M&A database to Compustat requires `gvkey`'s for both the acquirer and target (if they are traded/public). [Gordon Phillips](http://www.tuck.dartmouth.edu/faculty/faculty-directory/gordon-phillips) and [Alexei Zhdanov](https://sites.psu.edu/auz15/) ([RFS, 2013](https://academic.oup.com/rfs/article/26/1/34/1593273)) created the first major mapping between firms in SDC and Compustat using a combination of name and date matching.  Gaps where filled in using [this website](http://makeresearchgreatagain.com/data_search/) that replicates the `gvkey` search in WRDS.  Either myself or a research assistant searched for nearly all M&As deals from 1996-2016 that did not have a gvkey in the Phillips and Zhdanov data, comparing names and dates by hand.
 
 # Data
 
-CSV coming soon.  The data format is 
+[The data](LINK) is in csv form with the following structure:
 
-`(DealNumber, tgt_gvkey, acq_gvkey)`
+`(DealNumber, tgvkey, agvkey)`
 
-where the `DealNumber` is the SDC identifier for deals.  Note that this includes all deals, even those missing `gvkey`'s.
+where 
 
-# Code to implement
+* `DealNumber`: SDC identifier for deals.  
+* `agvkey`: the acquirer gvkey (can be missing)
+* `tgvkey`: the target gvkey (can be missing)
 
-The following code snippets will help you incorporate the data into yours.
+Note that this includes all deals where we could find a gvkey for either the acquirer or target.
 
-  ## Stata
-  
-  Coming soon.
-  
-  ## R
-  
-  Coming soon.
-  
-  ## Python
-  
-  Coming soon.
+# Citations
+
+```latex
+@article{phillips2013r,
+  title={R\&D and the Incentives from Merger and Acquisition Activity},
+  author={Phillips, Gordon M and Zhdanov, Alexei},
+  journal={The Review of Financial Studies},
+  volume={26},
+  number={1},
+  pages={34--78},
+  year={2013},
+  publisher={Society for Financial Studies}
+}```
+
+and
+
+```latex
+@article{ewensPetersWang2018,
+ title={Acquisition prices and the measurement of intangible capital},
+ author={Ewens, Michael and Peters, Ryan and Wang, Sean},
+ journal={Working Paper}
+ year={2018}
+ }
+```
