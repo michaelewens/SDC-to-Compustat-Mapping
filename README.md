@@ -26,7 +26,7 @@ Stay tuned (i.e., watch or star this repo.) for updates.  Any errors or fill-ins
 
 # Citations
 
-```latex
+```Latex
 @article{phillips2013r,
   title={R\&D and the Incentives from Merger and Acquisition Activity},
   author={Phillips, Gordon M and Zhdanov, Alexei},
@@ -36,11 +36,12 @@ Stay tuned (i.e., watch or star this repo.) for updates.  Any errors or fill-ins
   pages={34--78},
   year={2013},
   publisher={Society for Financial Studies}
-}```
+  }
+```
 
 and
 
-```latex
+```Latex
 @article{ewensPetersWang2018,
  title={Acquisition prices and the measurement of intangible capital},
  author={Ewens, Michael and Peters, Ryan and Wang, Sean},
