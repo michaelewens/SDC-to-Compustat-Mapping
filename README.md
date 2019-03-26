@@ -4,7 +4,7 @@ Connecting SDC's M&A database to Compustat requires `gvkey`'s for both the acqui
 
 # Data
 
-[The data](LINK) is in csv form with the following structure:
+[The data](https://github.com/michaelewens/sdc_ma_gvkeys/blob/master/dealnum_to_gvkey.csv) is in csv form with the following structure:
 
 `(DealNumber, tgvkey, agvkey)`
 
