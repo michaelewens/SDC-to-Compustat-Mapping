@@ -4,7 +4,7 @@ Connecting SDC's M&A database to Compustat requires `gvkey`'s for both the acqui
 
 # Data
 
-[The data](https://github.com/michaelewens/sdc_ma_gvkeys/blob/master/dealnum_to_gvkey.csv) is in csv form with the following structure:
+[The data connecting SDC deal number to gvkeys](https://github.com/michaelewens/sdc_ma_gvkeys/blob/master/dealnum_to_gvkey.csv) is in csv form with the following structure:
 
 `(DealNumber, tgvkey, agvkey)`
 
@@ -19,6 +19,10 @@ Note that this includes all deals where we could find a gvkey for either the acq
 * 100,454 deals with `agvkey`
 * 50,248 deals with `tgveky`
 * 22,259 with both `agvkey` and `tgveky`
+
+## Company-level match using CUSIP
+
+[The second file](https://github.com/michaelewens/SDC-to-Compustat-Mapping/blob/master/sdc_compustat_cusip_gvkey.csv) was built by taking all the SDC name-CUSIP pairs without a match in the main repo's mapping (above) and comparing them to all Compustat-GVKEY pairs.  The match is then done on SDC names-Compustat names. Note that this is a time-invariant mapping (so there are multiple Compustat IDs to different SDC ids).  From Daniel Yang (OSU).
 
 # Updates
 
