@@ -22,7 +22,7 @@ Note that this includes all deals where we could find a gvkey for either the acq
 
 ## Company-level match using CUSIP
 
-[The second file](https://github.com/michaelewens/SDC-to-Compustat-Mapping/blob/master/sdc_compustat_cusip_gvkey.csv) was built by taking all the SDC name-CUSIP pairs without a match in the main repo's mapping (above) and comparing them to all Compustat-GVKEY pairs.  The match is then done on SDC names-Compustat names. Note that this is a time-invariant mapping (so there are multiple Compustat IDs to different SDC ids).  From Daniel Yang (OSU).
+[The second file](https://github.com/michaelewens/SDC-to-Compustat-Mapping/blob/master/sdc_compustat_cusip_gvkey.csv) was built by taking all the SDC name-CUSIP pairs without a match in the main repo's mapping (above) and comparing them to all Compustat-GVKEY pairs. The match is then done on SDC names-Compustat names. Note that this is a time-invariant mapping based entirely on company names (so there can be multiple SDC CUSIPs to one Compustat GVKEY as a company changes its CUSIP over time). From Daniel Yang (Ohio State).
 
 # Updates
 
