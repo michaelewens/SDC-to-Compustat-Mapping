@@ -17,9 +17,9 @@ where
 
 Note that this includes all deals where we could find a gvkey for the acquirer or target.  Basic statistics as of June 21, 2024:
 
-* 100,454 deals with `agvkey`
-* 50,248 deals with `tgveky`
-* 22,259 with both `agvkey` and `tgveky`
+* 132,497 deals with `agvkey`
+* 60,071 deals with `tgveky`
+* 24,153 with both `agvkey` and `tgveky`
 
 ## Company-level match using CUSIP
 
