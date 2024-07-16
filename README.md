@@ -14,7 +14,8 @@ where
 * `agvkey`: the acquirer gvkey (can be missing)
 * `tgvkey`: the target gvkey (can be missing)
 * `source`: indicates a new merge from a June 2024 merge of SDC and Compustat, 0 or 1. 
-
+* `multiple_targets`: indicator if there are multiple matches (targets).  Indicator of subsidiary purchase and comparison to old versions of mapping.
+  
 Note that this includes all deals where we could find a gvkey for the acquirer or target.  Basic statistics as of June 21, 2024:
 
 * 132,497 deals with `agvkey`
